@@ -933,7 +933,7 @@ function library:AddProfile()
 			create("ImageLabel", { Name = "icon", BackgroundTransparency = 1, Position = UDim2.new(0, 10, 0, 10), Size = UDim2.new(0, 40, 0, 40) }),
 			create("TextLabel", { Name = "name", BackgroundTransparency = 1, Font = Enum.Font.GothamSemibold, Position = UDim2.new(0, 65, 0, 15), Size = UDim2.new(1, -75, 0, 30), Text = "Welcome, " .. localPlayer.Name, TextColor3 = "theme.textForeground", TextSize = 16, TextXAlignment = Enum.TextXAlignment.Left }),
 			create("TextLabel", { Name = "id", BackgroundTransparency = 1, Font = Enum.Font.Gotham, Position = UDim2.new(0, 10, 0, 60), Size = UDim2.new(1, -20, 0, 14), Text = "ID: " .. localPlayer.UserId, TextColor3 = "theme.textForeground", TextSize = 14, TextXAlignment = Enum.TextXAlignment.Left }),
-			create("TextLabel", { Name = "exploit", BackgroundTransparency = 1, Font = Enum.Font.Gotham, Position = UDim2.new(0, 10, 0, 80), Size = UDim2.new(1, -20, 0, 14), Text = "Exploit: " .. (identifyexecutor and table.concat({ identifyexecutor() }, " ") or "Unknown"), TextColor3 = "theme.textForeground", TextSize = 14, TextXAlignment = Enum.TextXAlignment.Left }),
+			create("TextLabel", { Name = "exploit", BackgroundTransparency = 1, Font = Enum.Font.Gotham, Position = UDim2.new(0, 10, 0, 80), Size = UDim2.new(1, -20, 0, 14), Text = "Exploit Used: " .. (identifyexecutor and table.concat({ identifyexecutor() }, " ") or "Unknown"), TextColor3 = "theme.textForeground", TextSize = 14, TextXAlignment = Enum.TextXAlignment.Left }),
 			create("Folder", { Name = "stats" })
 		}, UDim.new(0, 4))
 	}, profile)
